@@ -77,10 +77,10 @@ class Mapping:
 
     def add_func(self, fn, fl, fp, fa, ff):
         self.data[fn] = {}
-        self.data[fn]['fl'] = fl
-        self.data[fn]['fp'] = fp
-        self.data[fn]['fa'] = fa
-        self.data[fn]['ff'] = ff
+        self.data[fn]['fl'] = fl  # function lineno
+        self.data[fn]['fp'] = fp  # function in filepath
+        self.data[fn]['fa'] = fa  # function args
+        self.data[fn]['ff'] = ff  # function in function
 
     def del_func(self, func):
         del self.data[func]
