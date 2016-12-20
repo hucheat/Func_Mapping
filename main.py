@@ -11,9 +11,7 @@ __Author__ = 'Virink'
 class Mapping:
 
     __name__ = 'Mapping'
-    path_list = []
     db = 'maps.json'
-    data = None
 
     # json
     # ============
