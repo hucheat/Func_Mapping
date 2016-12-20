@@ -118,6 +118,7 @@ class Mapping:
         if m_comments:
             for i in m_comments:
                 content = content.replace(i, '')
+        #####################
         # with open('test.bak.php', 'w') as f:
         #     f.write(content)
         # # Search Function
@@ -144,7 +145,6 @@ class Mapping:
         #         self.op(fr)
         #     else:
         #         fr = ''
-        #########################
         #########################
         pos = 0
         while(content[pos:].find('function ') != -1):
@@ -208,11 +208,10 @@ class Mapping:
     def func_in_func(self):
         fcf = self.data.keys()
         aff = list(set(chain(fcf, self.pif)))
-        print len(aff)
         for cf in fcf:
             tmp_f = []
             for f in aff:
-                if f+"(" in self.data[cf]['fb']:
+                if f + "(" in self.data[cf]['fb']:
                     tmp_f.append(f)
             tmp_i = {}
             tmp_s = []
@@ -236,8 +235,6 @@ if __name__ == '__main__':
     # m.debug = True
     # m.mapping('/Users/virink/www')
     m.mapping('.')
-    m.show_maps()
-    print '-----------'
     m.func_in_func()
     m.show_maps()
     # os.system('pwd')
