@@ -11,6 +11,7 @@
 - 函數所在行 fl - int
 - 函數所在文件 fp - str
 - 函數參數 fa - list
+- 函數體 fb = str
 - 函數內部調用函數 ff - list
 - 函數返回參數 fr - str
 
@@ -25,24 +26,14 @@
     - 獲取函數名
     - 獲取函數參數
     - 獲取行號
+    - 取函數體
+    - 獲取函數內部調用函數
 
 ## 未實現
 
-- 匹配花括號獲取函數體
-    - 獲取函數內部調用函數
+- 獲取函數內部定義的函數
 - 生成圖
 
 ## 目前
 
-匹配大括號。。(邏輯混亂了，憂傷)
-
-## 判斷函數內部函數
-
-    //自定義函數
-    for n in self.data.keys():
-        if n in funcBody:
-            ff.append(n)
-    //內部函數
-    for n in phpFuncs:
-        if n in funcBody:
-            ff.append(n)
+迷茫、、可能要斷更了、、研究php原生的語法分析~~
