@@ -210,8 +210,6 @@ class Mapping:
     def func_in_func(self):
         fcf = self.data.keys()
         aff = list(set(chain(fcf, self.pif)))
-
-        # aff = []
         print len(aff)
         for cf in fcf:
             tmp_f = []
