@@ -37,3 +37,11 @@
 ## 目前
 
 迷茫、、可能要斷更了、、研究php原生的語法分析~~
+
+## 目錄結構
+
+- main.py 實現功能
+- maps.json 保存函數信息
+- pif.dat PHP內置函數
+- make_pif.php 生成pif.dat(需要php環境)
+- test.php 測試文件

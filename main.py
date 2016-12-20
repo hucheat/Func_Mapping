@@ -239,8 +239,8 @@ if __name__ == '__main__':
     m = Mapping()
     # m.debug = True
     # m.mapping('/Users/virink/www')
-    m.mapping('/Users/virink/Workspace/AutoAuditHelper/Func_Mapping')
-    # m.show_maps()
+    m.mapping('.')
+    m.show_maps()
     print '-----------'
     m.func_in_func()
     m.show_maps()
