@@ -18,7 +18,7 @@ class Mapping:
     # json
     # ============
     # {
-    #   'fn':{'fl':1,'fp':'xxx.php','fa':['a','b','c'],'ff':['xxx','yyy','zzz']}
+    #   'fn':{'fl':1,'fp':'xxx.php','fa':['a','b','c'],'ff':{1:'xx',2:'yy'}, 'fr':'xxxxx', 'fb':'xxxxx'}
     # }
     #
 
